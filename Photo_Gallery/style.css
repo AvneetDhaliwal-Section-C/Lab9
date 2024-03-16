@@ -1,0 +1,213 @@
+* {
+    background-color: black;
+    color: #ebebc8;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    background-color: rgba(128, 128, 128, 0.152);
+    margin-top: 0;
+    padding: 1.5%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 white, 0 -2px white;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.categoryCSS {
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1%;
+}
+
+.grid-container {
+    margin-top: 30px;
+    padding: 0px;
+    width: 60%;
+    /* margin: auto; */
+    justify-content: center;
+    display: grid;
+    grid-row-gap: 2%;
+    grid-column-gap: 1%;
+    grid-template-columns: repeat(3, 3fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 5%;
+    margin: 1.5%;
+    border: 0.8px solid rgba(255, 255, 255, 0.476);
+    cursor: pointer;
+}
+
+.categoryBtn:hover {
+    background-color: #ebebc8;
+    color: black;
+    font-size: large;
+    height: 43px;
+    width: 103px;
+}
+
+#All {
+    background-color: #ebebc8;
+    color: black;
+}
+
+button {
+    color: black;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: #ebebc8;
+    border: 1px solid #ebebc8;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+}
+
+.lightbox button {
+    background-color: black;
+    color: #ebebc8;
+    margin-top: 1vh;
+}
+
+.lightbox img {
+    margin-top: 8vh;
+    height: 80%;
+    width: 70%;
+    border-radius: 3%;
+}
+
+@media only screen and (max-width: 382px) {
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        grid-row-gap: 0.2%;
+        grid-column-gap: 3%;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .categoryBtn {
+        margin: 2%;
+        width: 40%;
+        display: inline-block;
+    }
+
+
+    .lightbox img {
+        height: 70%;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width:383px) and (max-width: 453px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 0%;
+        grid-column-gap: 3%;
+        width: 85%;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .categoryBtn {
+        margin: 2%;
+        width: 40%;
+        display: inline-block;
+    }
+
+    .lightbox img {
+        height: 70%;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 454px) and (max-width: 635px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0.5%;
+        grid-column-gap: 3%;
+        width: 90%;
+    }
+
+    .grid {
+        height: 200px;
+        width: 100%;
+    }
+
+    .lightbox img {
+        height: 70%;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 636px) and (max-width: 966px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0.5%;
+        grid-column-gap: 3%;
+        width: 80%;
+    }
+
+    .grid {
+        height: 250px;
+        width: 100%;
+    }
+
+    .lightbox img {
+        height: 70%;
+        width: 90%;
+    }
+}
+
+
+
+@media only screen and (min-width: 967px) and (max-width: 1540px) {
+    .grid-container {
+        grid-row-gap: 0.5%;
+        grid-column-gap: 3%;
+    }
+
+    .grid {
+        height: 250px;
+        width: 100%;
+    }
+}
